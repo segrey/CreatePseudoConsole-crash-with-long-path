@@ -6,7 +6,7 @@ This repository automates reproducing [`CreatePseudoConsole`](https://learn.micr
 ```powershell
 .\run-terminal-app.ps1 -DestinationDirLength <number>
 ```
-It does the following:
+The PowerShell command does the following:
 1. Creates a new directory in the project root. The length of the directory full path is equal to the specified `number`.
 2. Downloads [Windows Terminal v1.19.10573.0](https://github.com/microsoft/terminal/releases/tag/v1.19.10573.0) and extracts it to the created directory.
 3. Runs the extracted `WindowsTerminal.exe`.
@@ -18,15 +18,8 @@ It does the following:
 .\run-terminal-app.ps1 -DestinationDirLength 145
 ```
 
-It runs for a few seconds and then terminates without showing the Windows Terminal UI:
-<style>
-  code {
-    white-space : pre-wrap !important;
-    word-break: break-all;
-  }
-</style>
+It runs for a few seconds and then terminates without showing the Windows Terminal UI. The generated output:
 ```text
-PS D:\CreatePseudoConsole-crash-with-long-path> .\run-terminal-app.ps1 -DestinationDirLength 145
 Generating destination directory of total full path length 145, base directory full path length: 47
 Destination path: D:\CreatePseudoConsole-crash-with-long-path\tmp\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaa (length: 145, 11 new directories created)
 Downloading https://github.com/microsoft/terminal/releases/download/v1.19.10573.0/Microsoft.WindowsTerminal_1.19.10573.0_x64.zip ...
