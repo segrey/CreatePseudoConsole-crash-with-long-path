@@ -1,6 +1,6 @@
 # CreatePseudoConsole-crash-with-long-path
 
-This repository automates reproducing `CreatePseudoConsole` crash when path to `conpty.dll` is long.
+This repository automates reproducing [`CreatePseudoConsole`](https://learn.microsoft.com/en-us/windows/console/createpseudoconsole) crash when path to `conpty.dll` is long.
 
 ## Usage
 ```powershell
@@ -18,7 +18,7 @@ It does the following:
 .\run-terminal-app.ps1 -DestinationDirLength 145
 ```
 
-It runs a few seconds and then terminates without showing the Windows Terminal UI:
+It runs for a few seconds and then terminates without showing the Windows Terminal UI:
 <style>
   code {
     white-space : pre-wrap !important;
