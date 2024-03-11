@@ -27,3 +27,5 @@ Expanding Microsoft.WindowsTerminal_1.19.10573.0_x64.zip
 Running D:\CreatePseudoConsole-crash-with-long-path\tmp\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaaa\aaaaaaa\terminal-1.19.10573.0\WindowsTerminal.exe
 Finished with exit code -1073740791 (hex: c0000409)
 ```
+
+See https://github.com/microsoft/terminal/issues/16860 for the details.
